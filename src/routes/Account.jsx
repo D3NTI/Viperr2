@@ -5,6 +5,7 @@ export default function account() {
   return (
     <div>
       <NavReg></NavReg>
+      small change
     </div>
   );
 }
