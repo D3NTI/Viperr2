@@ -1,5 +1,6 @@
-import React from "react";
-import Logo from "../assets/logo.png";
+import React from 'react';
+import Logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
   return (
@@ -7,7 +8,7 @@ export default function Nav() {
       <img src={Logo} alt="" />
       <ul className="nav-butt">
         <li>
-          <a href="">Gallery</a>
+          <a>Gallery</a>
         </li>
         <li>
           <a href="">Price</a>
@@ -24,7 +25,7 @@ export default function Nav() {
       </ul>
       <div className="nav-btns">
         <a href="">Reservation</a>
-        <a href="">Merch</a>
+        <Link to="/account">Sign Up</Link>
       </div>
     </div>
   );
