@@ -12,9 +12,8 @@ const useAudio = (url) => {
   };
 
   useEffect(() => {
-    audio.volume = 0.5;
+    audio.volume = 1;
     audio.loop = true;
-    audio.requireInteraction = false;
     playing ? audio.play() : audio.pause();
   }, [playing]);
 
@@ -23,6 +22,7 @@ const useAudio = (url) => {
     audio.addEventListener('ended', () => setPlaying(true));
     return () => {
       audio.removeEventListener('ended', () => setPlaying(true));
+      audio.pause();
     };
   }, []);
 

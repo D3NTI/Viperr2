@@ -1,5 +1,6 @@
-import React from "react";
-import Mice from "../assets/mice.png";
+import React from 'react';
+
+import Mice from '../assets/mice.png';
 export default function Main() {
   return (
     <div className="main">
